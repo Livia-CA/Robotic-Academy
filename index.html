@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+  <title>Robotics Academy</title>
+  <link rel="shortcut icon" href="img/iconNavegador.png">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="visivel" id="tela1">
+  	<div id="tudo">
+
+  		<!-- botao de login p/ modal usuário-->
+      <div class="login">
+        <button onclick="btao()" id="myBtn" class="btn"><img id="user" src="img/usuario.png"></button>
+      </div>
+      <!-- fim do botao de login p/ modal usuário-->
+      
+      <!-- logo -->
+      <a href="#inicio" id="logo"><img src="img/logotest1.png"></a>
+      <!-- fim logo -->
+
+      <!-- botoes laterais -->
+      <nav id="botoes">
+        <a href="#meio" id="beneficios"><p>Benefícios<br>Robótica</p> <img src="img/diversos.png"></a>
+        <a href="#fim" id="olimpiadas"><p>Espaço<br>olímpico</p> <img src="img/copo.png"></a>
+        <a onclick="mudar()" id="comeceAgr"><p>Comece<br>agora</p> <img src="img/educacao.png"></a>
+      </nav>
+      <!-- fim dos botoes laterais -->
+
+      <a href="#inicio" class="btn_baixos" id="subir2" title="voltar para o topo"><img src="img/cima.png" alt="seta para cima"></a>
+
+      <!-- *********************************parte das telas********************************* -->
+      <div id="telas">
+
+        <div id="img2"><img src="img/testeimg.png"></div>
+        <!-- =================================================apresentação do site================================================= -->
+        <section id="inicio">
+          <div id="conjunto">
+            <div id="img1"><img src="img/testenome1.png"></div>
+            <div id="saiba"><a href="#sobre"><button onclick="sobreAgente()" id="saibamais">sobre a gente</button></a></div>
+          </div>
+        </section>
+
+        <article id="sobre">
+          <div>
+            <img src="img/logotest1.png">
+            <h1>Robotics Academy</h1><p id="tracinho"></p>
+            <p class="robaticAcademy">Essa plataforma foi desenvolvida com o intuito de promover a
+              valorização de diversos materiais educativos existentes em diversas plataformas, assim como apresentar
+              a robótica educacional, de modo que fossem reunidas em um único local, na Robotics Academy, facilitando aos estudantes,
+              educadores, entre outros com interesse na área de robótica, que buscam esses materiais na
+              web adentro, sacou!? Lembrando, é necessário se cadastrar para ter acesso, então para que perder tempo?
+            </p>
+            <p class="robaticAcademy">Assim, como queremos divulgar mais esses canais, videos, sites e etc,
+              não se esqueça de sempre deixar likes, compartilhar com seus amigos, para que
+              assim nosso principal objetivo seja alcançado, a valorização de canais educativos, além disso,
+              caso conheça algum meio educativo que não esteja em nossa plataforma, compartilhe conosco,
+              através dos comentários, ou pelas nossas redes sociais! ; )
+            </p>
+          </div>
+        </article>
+        <!-- =================================================beneficios da robótica================================================= -->
+        <section id="meio">
+          <header><p class="titulo" id="titu1">REUNIMOS AQUI ALGUNS DOS DIVERSOS BENEFÍOS DA ROBÓTICA<p id="tit1"></p></p></header>
+          <div id="tudo_card">
+
+            <div class="card">
+              <div class="um">
+                <p>Ao aprender a linguagem de programação, os alunos são ensinados a pensar de forma estruturada. </p>
+              </div>
+
+              <div class="dois">
+                <img src="img/inteligencia.png">
+                <p>Raciocínio lógico</p>
+              </div>
+            </div> 
+
+            <div class="card">
+              <div class="um">
+                <p>O aprendizado da programação estimula o aluno a organizar os pensamentos e as ações a serem tomadas para a solução dos desafios</p>
+              </div>
+
+              <div class="dois">
+                <img src="img/detalhes.png">
+                <p>Organização</p>
+              </div>
+            </div>  
+
+            <div class="card">
+              <div class="um">
+              <p>O ensino de programação e robótica também influencia, auxilia e melhora o aprendizado de matérias de ciências humanas, além de melhorar a escrita</p>
+              </div>
+
+              <div class="dois">
+                <img src="img/caneta.png">
+                <p>Escrita</p>
+              </div>
+            </div>  
+
+            <div class="card">
+              <div class="um">
+                <p>As crianças e adolescentes se familiarizam com os números ou as novas palavras e aprendem raciocinar com mais precisão</p>
+              </div>
+
+              <div class="dois">
+                <img src="img/tecnologia.png">
+                <p>Áreas de exatas</p>
+              </div>
+            </div>  
+
+            <div class="card">
+              <div class="um">
+                <p>Ao serem estimuladas a encontrar respostas criativas para problemas e questionamentos reais, acabam por desenvolver ainda mais essas habilidades</p>
+              </div>
+
+              <div class="dois">
+                <img src="img/desenhar.png">
+                <p>Criatividade</p>
+              </div>
+            </div>  
+
+            <div class="card">
+              <div class="um">
+              <p>Organização, comprometimento e sociabilidade, por exemplo, são elementos fortemente trabalhados por meio do ensino da robótica</p>
+              </div>
+
+              <div class="dois">
+                <img src="img/negocio.png">
+                <p>Desenvolvimento pessoal</p>
+              </div>
+            </div>      
+          </div>
+        </section>
+
+         <!-- =================================================competições de robótica================================================= -->     
+        <section id="fim">
+
+          <header><p class="titulo" id="titu2">CONHEÇA AGORA ALGUMAS COMPETIÇÕES DE ROBÓTICA<p id="tit2"></p></p></header>
+
+          <div id="bloco1_obr">
+            <div class="blocos">
+              <div id="img_bloco1" class="img_blocosCompe" class="teste">
+                <button onclick="botaoMudar('bloco1_obr','bloco5_ironcup')" class="btn_Esq"><img src="img/volta.png"></button>
+              </div>
+              <div class="txt_bloc" class="teste">
+                <button onclick="botaoMudar('bloco1_obr','bloco2_sesi')" class="btn_Dir"><img src="img/setaDir.png"></button>
+                <h3>OBR</h3>
+                <p>É uma olimpíada voltada ao conhecimento sobre robótica, onde estudantes do ensino
+                  médio e fundamental podem participar. A OBR foi criada com a iniciativa de promover o
+                  conhecimento e a difusão da robótica na sociedade brasileira.
+                  Existem duas modalidades dentro da OBR, sendo elas Prática e Teórica. Na Prática, as
+                  equipes recebem uma tarefa e o robô montado por elas tem que executar uma determinada
+                  atividade. Na Teórica, são provas abordando problemas sobre robótica que podem ser
+                  solucionados com o aprendizado do currículo escolar básico.</p>
+                <a href="http://www.obr.org.br/" target="_blank" class="anc_Website">Visite a Website!</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="bloco2_sesi" class="invisivel">
+            <div class="blocos" >
+              <div id="img_bloco2" class="img_blocosCompe" class="teste">
+                <button onclick="botaoMudar('bloco2_sesi','bloco1_obr')" class="btn_Esq"><img src="img/volta.png"></button>
+              </div>
+              <div class="txt_bloc" class="teste">
+                <button onclick="botaoMudar('bloco2_sesi','bloco3_tbr')" class="btn_Dir"><img src="img/setaDir.png"></button>
+                <h3>Festival Sesi de Robótica</h3>
+                <p>É um festival de robótica que reúne estudantes (de 9 a 18 anos) de escolas públicas
+                  e privadas, tais que participam de competições de três diferentes modalidades: a FIRST
+                  LEGO League(FLL), a FIRST Tech Challenge (FTC) e a F1 in Schools (Fórmula 1 nas escolas).
+                  No FLL, os participantes são desafiados a resolver problemas do dia a dia e os
+                  temas são diferentes a cada ano, no FTC os participantes têm que projetarem, programarem
+                  e construirem robôs capazes de realizar tarefas e o F1 in Schools onde o desafio é 
+                  reproduzir a realidade de uma escuderia de Fórmula 1. 
+                </p>
+                <a href="http://www.portaldaindustria.com.br/sesi/canais/torneio-de-robotica/" target="_blank" class="anc_Website">Visite a Website!</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="bloco3_tbr" class="invisivel">
+            <div class="blocos" >
+              <div id="img_bloco3" class="img_blocosCompe" class="teste">
+                <button onclick="botaoMudar('bloco3_tbr','bloco2_sesi')" class="btn_Esq"><img src="img/volta.png"></button>
+              </div>
+              <div class="txt_bloc" class="teste">
+                <button onclick="botaoMudar('bloco3_tbr','bloco4_wro')" class="btn_Dir"><img src="img/setaDir.png"></button>
+                <h3>TBR</h3>
+                <p>O Torneio Brasil de Robótica (TBR) é um torneio anual de robótica, que conta com a
+                  participação de jovens alunos de todo o Brasil que desenvolverem um projeto de pesquisa
+                  utilizando a tecnologia da robótica acerca de um tema divulgado pelo TBR. A competição
+                  é dividida em categorias, sendo elas, regular (Baby: 03 a 06 anos; Kids: 06 a 10 anos;
+                  Middle: 9 a 15 anos; High: 15 a 19 anos), Futebol (Technic :14 a 19 anos), Corrida com
+                  obstáculos( Master: mais de 19 anos), ARC – WRO( Universitary: mais de 16 anos). TBR é 
+                  uma iniciativa da empresa R2E para promover cunho educativo científico tecnológico no Brasil. 
+                 </p>
+                <a href="https://www.torneiobrasilderobotica.com.br/" target="_blank" class="anc_Website">Visite a Website!</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="bloco4_wro" class="invisivel">
+            <div class="blocos" >
+              <div id="img_bloco4" class="img_blocosCompe" class="teste">
+                <button onclick="botaoMudar('bloco4_wro','bloco3_tbr')" class="btn_Esq"><img src="img/volta.png"></button>
+              </div>
+              <div class="txt_bloc" class="teste">
+                <button onclick="botaoMudar('bloco4_wro','bloco5_ironcup')" class="btn_Dir"><img src="img/setaDir.png"></button>
+                <h3>WRO</h3>
+                <p>A WRO (World Robot Olympiad) se trata de um torneio de nível global que reúne participantes
+                  a partir de 10 anos de todo o mundo, para desenvolverem a criatividade, design e habilidades
+                  de resolução de problemas através de competições de robótica. A competição possui quatro categorias
+                  diferentes, sendo elas, Regular (Elementar: menos de 13 anos, Junior high: 13 a 16 anos e Senior High:
+                  entre 17 e 19 anos), College, Open (Elementar, Junior high e Senior High) e Soccer, além disso a
+                  Olimpíada Mudial de Robôs usa Lego Mindstorm fabricado pela LEGO Education. 
+                </p>
+                <a href="https://www.wrobrazil.com/" target="_blank" class="anc_Website">Visite a Website!</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="bloco5_ironcup" class="invisivel">
+            <div class="blocos">
+              <div id="img_bloco5" class="img_blocosCompe" class="teste">
+                <button onclick="botaoMudar('bloco5_ironcup','bloco4_wro')" class="btn_Esq"><img src="img/volta.png"></button>
+              </div>
+              <div class="txt_bloc" class="teste">
+                <button onclick="botaoMudar('bloco5_ironcup','bloco1_obr')" class="btn_Dir"><img src="img/setaDir.png"></button>
+                <h3>Iron Cup</h3>
+                <p>A IronCup é um evento de competição de robótica, tal que está dividida em cinco categorias,
+                  Futebol 2D (jogo de futebol virtual de dois times rivais que por meio de uma programação específica
+                  realizam as tarefas do jogo), Futebol VS (três robôs autônomos, por time, que jogam o futebol real
+                  entre si), mini Sumô e Sumô LEGO(lutas de robô sumô, a diferença entre as categorias é o tamanho e
+                  material em que os robôs são construídos), e Follow Line (composta por carros autônomos pré-programados
+                  que devem realizar um percurso completo no menor tempo possível).  
+                </p>
+                <a href="https://www.robocore.net/eventos/ironcup-2020" target="_blank" class="anc_Website">Visite a Website!</a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <footer>
+          <div class="footer_p1">
+            <h3>Robotics Academy</h3>
+            <div>
+              <h4>siga-nos</h4>
+              <div class="icons_contatos">
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_p2">
+            <p>@ 2020 - Robotics Academy - por Livia</p>
+          </div>
+        </footer>
+
+      </div>
+      <!-- **************************fim das telas************************** -->
+
+    </div> <!-- **************************fim da div "tudo"************************** -->
+  	  
+  	<!--************************** parte do modal (login, cadastro...) **************************-->  
+  	<article id="myModal" class="modal">
+      <div class="modais">
+  	  <div class="modal-content">
+  	    <span onclick="spann()" class="close">&times;</span>
+        <img src="img/logotest1.png">
+        <p class="mns"><b>Cadastre-se para ter acesso aos materiais!</b></p>
+        <p id="t"><input type="text" required id="nome" placeholder="nome"></p>
+        <p id="t1"><input type="email" required id="email" placeholder="email"></p>
+        <p><input type="password" required id="senha" placeholder="senha"></p>
+        <button class="bt1" onclick="cadastro(nome.value, email.value, senha.value)">CADASTRAR</button>
+        <button class="bt2" onclick="entrar()">já possuo cadastro</button>
+  	  </div>
+      </div>
+  	</article>
+
+    <article id="myModal2" class="modal">
+      <div class="modais">
+      <div class="modal-content">
+        <span onclick="spann()" class="close">&times;</span>
+        <img src="img/logotest1.png">
+        <p class="mns"><b>Entre para ter acesso aos materiais!</b></p>
+        <div class="teste">
+          <p><input type="email" id="email2" required placeholder="email"></p>
+          <p><input type="password" id="senha2" required placeholder="senha"></p>
+          <button class="bt1" onclick="entrar2(email2.value, senha2.value)">ENTRAR</button>
+          <button class="bt2" onclick="n_cadast()">não possuo cadastro</button>
+        </div>
+      </div>
+    </div>
+    </article>
+
+    <article id="myModal4" class="modal">
+      <div class="modais">
+      <div class="modal-content">
+        <img id="img" src="img/logotest1.png">
+        <p class="mns"><b>Dados modo edição</b></p>
+        <p><input type="text" id="nome3" required placeholder="nome"></p>
+        <p><input type="email" id="email3" required placeholder="email"></p>
+        <p><input type="password" id="senha3" required placeholder="senha"></p>
+        <button class="bt1" onclick="editar(nome3.value, email3.value, senha3.value)">EDITAR</button>
+        <button class="bt2" onclick="cancelar()">cancelar</button>
+      </div>
+    </div>
+    </article>
+
+    <article id="myModal3" class="modal">
+      <div class="modais">
+      <div class="modal-content">
+        <span onclick="spann()" class="close">&times;</span>
+        <img src="img/logotest1.png">
+        <div class="teste">
+          <p id="p1"><b>Nome</b></p>
+          <p id="aq_nome"></p>
+          <p id="p2"><b>E-mail</b></p>
+          <p id="aq_email"></p>
+          <button class="bt1" onclick="edicao()">editar cadastro</button>
+          <button class="bt2" onclick="sair()">sair</button>
+        </div>
+      </div>
+    </div>
+    </article>
+    
+  </div>
+	<!--************************** fim da parte do modal (login, cadastro...)************************** -->
+
+  <!--************************** segunda tela************************** -->
+
+  <div id="tela2" class="invisivel">
+    <a href="#tela2" id="logo2"><img src="img/logotest1.png"></a>
+    
+    <div id="botaovoltar">
+      <a onclick="botaoMudar('tela2','tela1')" id="voltar"><p>Voltar</p><img src="img/volta.png"></a>
+    </div>
+
+    <header>
+      <div id="topo">
+        <p class="titulo" id="titu3">Reunimos aqui diversos materiais relacionados com robótica para você se aprofundar neste mundo!<p id="tit3"></p></p>
+      </div>
+
+      <div id="linksMate">
+        <a href="#canaisYou">Canais de Youtube</a>
+        <a href="#videosYou">Videos</a>
+        <a href="#sites">Sites</a>
+        <a href="#pdfsMont">PDFs montagem</a>
+      </div>
+    </header> 
+
+    <a href="#tela2" class="btn_baixos" id="subir" title="voltar para o topo"><img src="img/cima.png" alt="seta para cima"></a>
+    <a href="#comentario" class="btn_baixos" id="mensagem" title="comentários"><img src="img/mensagem.png" alt="comentários"></a>
+<!-- ================================canais do youtube================================ -->
+    <section id="canaisYou">
+      <header><h2>Canais de Youtube</h2></header>
+      <h3>Aqui estão canais que possuem como objetivo compartilhar conhecimento sobre robótica educacional, divirta-se!</h3>
+
+      <div id="canais">
+
+        <div class="bloMate">
+          <div class="img_bloco" title="JeyLAB Robótica">
+            <figure>  
+              <img src="img/jeylab.png" alt="JeyLAB Robótica">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>JeyLAB Robótica</p>
+            <p><a href="https://www.youtube.com/channel/UCoEmyORE_npFpVIyPnJv9sQ" target="_blank">ver canal</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Robômaker">
+            <figure>  
+              <img src="img/robomaker.png" alt="Robômaker">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Robômaker</p>
+            <p><a href="https://www.youtube.com/channel/UCavf10I8c__ZbWowQtv4ufA" target="_blank">ver canal</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Builderdude35">
+            <figure>  
+              <img src="img/builder.png" alt="Builderdude35">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Builderdude35</p>
+            <p><a href="https://www.youtube.com/channel/UCuXq-jiU0ANeBcF_Tvq1D7g" target="_blank">ver canal</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Leonardo - Seu Robô">
+            <figure>  
+              <img src="img/seurobo.png" alt="Leonardo - Seu Robô">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Leonardo - Seu Robô</p>
+            <p><a href="https://www.youtube.com/user/seurobo" target="_blank">ver canal</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- ================================videos do youtube================================ -->
+
+    <section id="videosYou">
+      <header><h2>Videos</h2></header>
+      <h3>Aqui estão videos e playlists que com certeza você vai curtir</h3>
+
+      <div id="videos">
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Manual do Mundo">
+            <figure>
+              <img src="img/manualdomundo.jpeg" alt="Manual do Mundo">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Nosso melhor robô de todos os tempos!</p>
+            <p><a href="https://www.youtube.com/watch?v=Ecw3kCo4AdQ" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Manual do Mundo">
+            <figure>
+              <img src="img/manualdomundo.jpeg" alt="Manual do Mundo">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Como fazer um DRONE CASEIRO</p>
+            <p><a href="https://www.youtube.com/watch?v=hbTvThjKlUk" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Manual do Mundo">
+            <figure>
+              <img src="img/manualdomundo.jpeg" alt="Manual do Mundo">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Como fazer um ROBÔ que DIRIGE SOZINHO</p>
+            <p><a href="https://www.youtube.com/watch?v=5KwH-bQYOEc" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Brincando com Ideias">
+            <figure>
+              <img src="img/brincIdeias.png" alt="Brincando com Ideias">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Quer aprender robótica pela internet? Conheça este robô com ARDUINO</p>
+            <p><a href="https://www.youtube.com/watch?v=Pg2GkAsycPU" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Brincando com Ideias">
+            <figure>
+              <img src="img/brincIdeias.png" alt="Brincando com Ideias">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Robótica Primeiros Passos</p>
+            <p><a href="https://www.youtube.com/playlist?list=PL7CjOZ3q8fMcNcWE9XkBlz-MYbN0xBrES" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Escola de Inventor - Curso de Férias: Ciência, Tecnologia e Empreendedorismo!">
+            <figure>
+              <img src="img/escolainventor.png" alt="Escola de Inventor">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Programa Forma e Design: Como funciona o Curso de Robótica</p>
+            <p><a href="https://www.youtube.com/watch?v=xl3ViUP-fng" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="a Revisada">
+            <figure>
+              <img src="img/revisada.png" alt="a Revisada">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Robótica para crianças</p>
+            <p><a href="https://www.youtube.com/playlist?list=PLRCchDl13FVkVM_TJX-V7Nc4YRKDUyDJ-" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Mega Curioso">
+            <figure>
+              <img src="img/curioso.png" alt="Mega Curioso">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>As 3 leis da robótica!</p>
+            <p><a href="https://www.youtube.com/watch?v=f462JqIyjHw" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="SESI">
+            <figure>
+              <img src="img/sesi.jpg" alt="SESI">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Turma da Robótica</p>
+            <p><a href="https://www.youtube.com/playlist?list=PL4_wpZsopCJJAFVEiT4jM25f8m1ErIdua" target="_blank">ver vídeo</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================sites================================ -->
+
+    <section id="sites">
+      <header><h2>Websites</h2></header>
+      <h3>Aqui estão Websites que possuem como objetivo compartilhar conhecimento sobre robótica educacional, divirta-se!</h3>
+
+      <div id="website">
+
+        <div class="bloMate">
+          <div class="img_bloco" title="JeyLAB Robótica">
+            <figure>
+              <img src="img/jeylab.png" alt="JeyLAB Robótica">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>JeyLAB Robótica</p>
+            <p><a href="https://jeylab.com.br/" target="_blank">ver site</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Builderdude35">
+            <figure>
+              <img src="img/builder.png" alt="Builderdude35">
+            </figure>
+          </div>
+          <div class="descricao">
+            <p>Builderdude35</p>
+            <p><a href="https://builderdude35.com/" target="_blank">ver site</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="Leonardo - Seu Robô">
+            <figure>
+              <img src="img/seurobo.png" alt="Leonardo - Seu Robô">
+            </figure>  
+          </div>
+          <div class="descricao">
+            <p>Leonardo - Seu Robô</p>
+            <p><a href="https://seurobo.com.br/" target="_blank">ver site</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section> 
+
+<!-- ================================PDFs de montagem================================ -->
+    <section id="pdfsMont">
+      <header><h2>PDFs Montagem</h2></header>
+      <h3>Caso você tenha acesso às peças de montagem lego, aqui foram reunidas várias opções de montagens prontas para você se divertir!</h3>
+
+      <div id="pdf">
+
+        <div class="bloMate">
+          <div class="img_bloco" title="BANNER PRINT3R">
+            <figure>
+              <img src="img/BANNER-PRINT3R.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>BANNER PRINT3R</p>
+            <p><a href="pdfs/BANNER%20PRINT3R.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="BOBB3E">
+            <figure>
+              <img src="img/BOBB3E.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>BOBB3E</p>
+            <p><a href="pdfs/BOBB3E.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="DINOREX">
+            <figure>
+              <img src="img/DINOR3X.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>DINOREX</p>
+            <p><a href="pdfs/DINOR3X.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="EL3CTRIC GUITAR">
+            <figure>
+              <img src="img/EL3CTRIC-GUITAR.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>EL3CTRIC GUITAR</p>
+            <p><a href="pdfs/EL3CTRIC%20GUITAR.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="EV3 GAME">
+            <figure>
+              <img src="img/EV3GAME.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>EV3 GAME</p>
+            <p><a href="pdfs/EV3GAME.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="EV3MEG">
+            <figure>
+              <img src="img/EV3MEG.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>EV3MEG</p>
+            <p><a href="pdfs/EV3MEG.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="EV3RSTORM">
+            <figure>
+              <img src="img/EV3RSTORM.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>EV3RSTORM</p>
+            <p><a href="pdfs/31313_EV3RSTORM_2016.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="GRIPP3R">
+            <figure>
+              <img src="img/GRIPP3R.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>GRIPP3R</p>
+            <p><a href="pdfs/31313_GRIPP3R_2016.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="KRAZ3">
+            <figure>
+              <img src="img/KRAZ3.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>KRAZ3</p>
+            <p><a href="pdfs/KRAZ3.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="MR B3AM">
+            <figure>
+              <img src="img/MRB3AM.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>MR B3AM</p>
+            <p><a href="pdfs/MR-B3AM.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="R3PTAR">
+            <figure>
+              <img src="img/R3PTAR.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>R3PTAR</p>
+            <p><a href="pdfs/31313_R3PTAR_2016.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="RAC3 TRUCK">
+            <figure>
+              <img src="img/RAC3R-TRUCK.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>RAC3 TRUCK</p>
+            <p><a href="pdfs/RAC3%20TRUCK.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="ROBODOZ3R">
+            <figure>
+              <img src="img/ROBODOZ3R.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>ROBODOZ3R</p>
+            <p><a href="pdfs/ROBODOZ3R.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="EV3 GAME">
+            <figure>
+              <img src="img/EV3GAME.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>EV3 GAME</p>
+            <p><a href="pdfs/EV3GAME.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="SPIK3R">
+            <figure>
+              <img src="img/SPIK3R.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>SPIK3R</p>
+            <p><a href="pdfs/31313_SPIK3R_2016.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="TRACK3R">
+            <figure>
+              <img src="img/TRACK3R.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>TRACK3R</p>
+            <p><a href="pdfs/31313_TRACK3R_2016.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="WACK3M">
+            <figure>
+              <img src="img/WACK3M.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>WACK3M</p>
+            <p><a href="pdfs/WACK3M.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+        <div class="bloMate">
+          <div class="img_bloco" title="EV3D4">
+            <figure>
+              <img src="img/EV3D4.jpg" alt="robô de lego">
+            </figure> 
+          </div>
+          <div class="descricao">
+            <p>EV3D4</p>
+            <p><a href="pdfs/EV3D4.pdf" target="_blank" >ver PDF</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section> 
+
+<!-- ================================comentários================================ -->
+    <section id="comentario">
+      <div id="topo_comentario">
+        <header>
+          <h1>Comentários</h1>
+          <p>Dê sugestões! Conhece meios educativos que não estão aqui? Comente! ajuda-nos a divulgar materiais educativos na aréa de robótica!</p>
+        </header>  
+      </div>
+      <div id="comentarios">
+        <p><input type="text" id="texto" placeholder="Digite aqui seu comentário!"><button onclick="btn_enviarComentario(texto.value)" id="btn_comentario">Enviar</button></p>
+        <h2>comentários:</h2>
+        <div id="aqui_comentarios"></div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer_p1">
+        <h3>Robotics Academy</h3>
+        <div>
+          <h4>siga-nos</h4>
+          <div class="icons_contatos">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_p2">
+        <p>@ 2020 - Robotics Academy - por Livia</p>
+      </div>
+    </footer>
+
+  </div>
+  <!-- *********************************fim segunda tela *********************************-->
+
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
